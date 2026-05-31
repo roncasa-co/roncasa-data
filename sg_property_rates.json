@@ -1,59 +1,544 @@
 {
-  "_last_updated": "2026-05-31",
-  "_source": "IRAS / CPF Board / MAS",
-  
-  "BSD": {
-    "residential": [
-      { "band_from": 0,       "band_to": 180000,  "rate": 0.01 },
-      { "band_from": 180000,  "band_to": 360000,  "rate": 0.02 },
-      { "band_from": 360000,  "band_to": 1000000, "rate": 0.03 },
-      { "band_from": 1000000, "band_to": 1500000, "rate": 0.04 },
-      { "band_from": 1500000, "band_to": 3000000, "rate": 0.05 },
-      { "band_from": 3000000, "band_to": null,    "rate": 0.06 }
-    ]
+  "meta": {
+    "last_updated": "2026-06-01T01:09:39+08:00",
+    "last_updated_date": "2026-06-01",
+    "description": "Singapore property rates for roncasa.co calculators",
+    "sources": [
+      "CPF Board",
+      "IRAS",
+      "MAS",
+      "HDB",
+      "DataGov SG"
+    ],
+    "repo": "roncasa-co/roncasa-data",
+    "calculator_url": "https://raw.githubusercontent.com/roncasa-co/roncasa-data/main/sg_property_rates.json"
   },
-
-  "ABSD": {
-    "SC_1st":  0.00,
-    "SC_2nd":  0.20,
-    "SC_3rd":  0.30,
-    "PR_1st":  0.05,
-    "PR_2nd":  0.30,
-    "PR_3rd":  0.35,
-    "foreigner": 0.60,
-    "entity":  0.65
+  "cpf": {
+    "interest_rates": {
+      "oa_floor": 0.025,
+      "oa_current": 0.025,
+      "sa_floor": 0.04,
+      "sa_current": 0.04,
+      "ma_floor": 0.04,
+      "ma_current": 0.04,
+      "ra_floor": 0.04,
+      "ra_current": 0.04,
+      "extra_first_30k": 0.01,
+      "extra_next_30k": 0.01,
+      "_source": "CPF Board / DataGov verified",
+      "_note": "OA floor 2.5% set by CPF Act. Current rate may exceed floor \u2014 check CPF Board quarterly."
+    },
+    "contribution_rates": {
+      "bands": [
+        {
+          "age_label": "35 and below",
+          "age_from": 0,
+          "age_to": 35,
+          "employee": 0.2,
+          "employer": 0.17,
+          "total": 0.37
+        },
+        {
+          "age_label": "35 to 45",
+          "age_from": 35,
+          "age_to": 45,
+          "employee": 0.2,
+          "employer": 0.17,
+          "total": 0.37
+        },
+        {
+          "age_label": "45 to 50",
+          "age_from": 45,
+          "age_to": 50,
+          "employee": 0.2,
+          "employer": 0.17,
+          "total": 0.37
+        },
+        {
+          "age_label": "50 to 55",
+          "age_from": 50,
+          "age_to": 55,
+          "employee": 0.2,
+          "employer": 0.15,
+          "total": 0.35
+        },
+        {
+          "age_label": "55 to 60",
+          "age_from": 55,
+          "age_to": 60,
+          "employee": 0.15,
+          "employer": 0.155,
+          "total": 0.305
+        },
+        {
+          "age_label": "60 to 65",
+          "age_from": 60,
+          "age_to": 65,
+          "employee": 0.095,
+          "employer": 0.12,
+          "total": 0.215
+        },
+        {
+          "age_label": "65 to 70",
+          "age_from": 65,
+          "age_to": 70,
+          "employee": 0.075,
+          "employer": 0.09,
+          "total": 0.165
+        },
+        {
+          "age_label": "Above 70",
+          "age_from": 70,
+          "age_to": 999,
+          "employee": 0.05,
+          "employer": 0.075,
+          "total": 0.125
+        }
+      ],
+      "ordinary_wage_ceiling": 7400,
+      "additional_wage_ceiling": 102000,
+      "oa_allocation": {
+        "note": "OA allocation % decreases with age \u2014 total CPF goes to OA/SA/MA split",
+        "35_below": 0.6217,
+        "35_to_45": 0.5677,
+        "45_to_50": 0.5136,
+        "50_to_55": 0.4055,
+        "55_to_60": 0.3108,
+        "60_to_65": 0.1238,
+        "65_to_70": 0.0607,
+        "above_70": 0.08
+      },
+      "_source": "CPF Board, effective 1 Jan 2024",
+      "_last_major_change": "2024-01-01",
+      "_note": "OW ceiling raised to $6800 Sep 2023, $7400 Jan 2025 \u2014 verify current ceiling"
+    },
+    "property_rules": {
+      "oa_usage": {
+        "can_use_for_property": true,
+        "accrued_interest_rate": 0.025,
+        "withdrawal_limit_pct": 1.2,
+        "note": "CPF used + accrued interest must be refunded to CPF upon sale"
+      },
+      "housing_withdrawal_limit": {
+        "leasehold_less_60yr": "restricted \u2014 partial withdrawal only",
+        "leasehold_30yr_or_less": "no CPF usage allowed",
+        "freehold_or_99yr": "up to 120% of VL"
+      },
+      "retirement_sums_2025": {
+        "brs": 106500,
+        "frs": 213000,
+        "ers": 426000,
+        "_note": "Increases ~3-4% annually. Announced each January for following year."
+      },
+      "_source": "CPF Board 2025"
+    }
   },
-
-  "SSD": {
-    "holding_years": [
-      { "within_years": 1, "rate": 0.12 },
-      { "within_years": 2, "rate": 0.08 },
-      { "within_years": 3, "rate": 0.04 },
-      { "within_years": 4, "rate": 0.00 }
-    ]
+  "stamp_duty": {
+    "bsd": {
+      "residential": {
+        "bands": [
+          {
+            "from": 0,
+            "to": 180000,
+            "rate": 0.01,
+            "label": "1%"
+          },
+          {
+            "from": 180001,
+            "to": 360000,
+            "rate": 0.02,
+            "label": "2%"
+          },
+          {
+            "from": 360001,
+            "to": 1000000,
+            "rate": 0.03,
+            "label": "3%"
+          },
+          {
+            "from": 1000001,
+            "to": 1500000,
+            "rate": 0.04,
+            "label": "4%"
+          },
+          {
+            "from": 1500001,
+            "to": 3000000,
+            "rate": 0.05,
+            "label": "5%"
+          },
+          {
+            "from": 3000001,
+            "to": null,
+            "rate": 0.06,
+            "label": "6%"
+          }
+        ]
+      },
+      "non_residential": {
+        "bands": [
+          {
+            "from": 0,
+            "to": 180000,
+            "rate": 0.01
+          },
+          {
+            "from": 180001,
+            "to": 360000,
+            "rate": 0.02
+          },
+          {
+            "from": 360001,
+            "to": 1000000,
+            "rate": 0.03
+          },
+          {
+            "from": 1000001,
+            "to": null,
+            "rate": 0.04
+          }
+        ]
+      },
+      "_source": "IRAS",
+      "_last_changed": "2023-02-14",
+      "_note": "Top marginal rate raised to 6% for residential > $3M in Budget 2023"
+    },
+    "absd": {
+      "SC_1st": {
+        "rate": 0.0,
+        "label": "SC buying 1st property"
+      },
+      "SC_2nd": {
+        "rate": 0.2,
+        "label": "SC buying 2nd property"
+      },
+      "SC_3rd": {
+        "rate": 0.3,
+        "label": "SC buying 3rd+ property"
+      },
+      "PR_1st": {
+        "rate": 0.05,
+        "label": "PR buying 1st property"
+      },
+      "PR_2nd": {
+        "rate": 0.3,
+        "label": "PR buying 2nd property"
+      },
+      "PR_3rd": {
+        "rate": 0.35,
+        "label": "PR buying 3rd+ property"
+      },
+      "foreigner": {
+        "rate": 0.6,
+        "label": "Foreigner (any residential)"
+      },
+      "entity": {
+        "rate": 0.65,
+        "label": "Entity / company"
+      },
+      "developer_remittable": {
+        "rate": 0.35,
+        "label": "Developer (remittable if conditions met)"
+      },
+      "developer_non_remittable": {
+        "rate": 0.05,
+        "label": "Developer (non-remittable 5%)"
+      },
+      "joint_purchase_rule": "Highest applicable profile rate applies to the full purchase",
+      "fta_remission": "US/Iceland/Liechtenstein nationals treated as SC under FTA",
+      "_source": "IRAS",
+      "_last_changed": "2023-04-27",
+      "_note": "Foreigner rate doubled from 30% to 60% on 27 Apr 2023"
+    },
+    "ssd": {
+      "residential": {
+        "bands": [
+          {
+            "holding_within_years": 1,
+            "rate": 0.12,
+            "label": "12% if sold within 1 year"
+          },
+          {
+            "holding_within_years": 2,
+            "rate": 0.08,
+            "label": "8% if sold within 2 years"
+          },
+          {
+            "holding_within_years": 3,
+            "rate": 0.04,
+            "label": "4% if sold within 3 years"
+          },
+          {
+            "holding_within_years": 4,
+            "rate": 0.0,
+            "label": "No SSD after 3 years"
+          }
+        ],
+        "applies_to": "Residential properties acquired on or after 20 Feb 2010"
+      },
+      "industrial": {
+        "bands": [
+          {
+            "holding_within_years": 1,
+            "rate": 0.15
+          },
+          {
+            "holding_within_years": 2,
+            "rate": 0.1
+          },
+          {
+            "holding_within_years": 3,
+            "rate": 0.05
+          },
+          {
+            "holding_within_years": 4,
+            "rate": 0.0
+          }
+        ]
+      },
+      "_source": "IRAS",
+      "_last_changed": "2017-03-11"
+    }
   },
-
-  "CPF": {
-    "OA_interest_rate": 0.025,
-    "accrued_interest_note": "OA rate applies to CPF used for property",
-    "withdrawal_limit_pct_of_valuation": 1.20
+  "loan_rules": {
+    "LTV": {
+      "private_bank_loan": {
+        "1st_loan_no_outstanding": {
+          "ltv": 0.75,
+          "min_cash": 0.05
+        },
+        "1st_loan_with_outstanding": {
+          "ltv": 0.45,
+          "min_cash": 0.25
+        },
+        "2nd_loan_no_outstanding": {
+          "ltv": 0.45,
+          "min_cash": 0.25
+        },
+        "2nd_loan_with_outstanding": {
+          "ltv": 0.3,
+          "min_cash": 0.25
+        },
+        "3rd_loan_plus": {
+          "ltv": 0.35,
+          "min_cash": 0.25
+        }
+      },
+      "hdb_loan": {
+        "ltv": 0.8,
+        "eligibility": "SC only, income ceiling $14k (family), flat must be HDB",
+        "interest_rate": 0.026
+      }
+    },
+    "TDSR": {
+      "threshold": 0.55,
+      "applies_to": "All property loans (private + HDB bank loans)",
+      "_note": "Total debt obligations \u2264 55% of gross monthly income"
+    },
+    "MSR": {
+      "threshold": 0.3,
+      "applies_to": [
+        "HDB flat",
+        "EC within MOP"
+      ],
+      "_note": "Mortgage \u2264 30% of gross monthly income. Only for HDB/EC."
+    },
+    "stress_test_rate": 0.04,
+    "_source": "MAS",
+    "_last_changed": "2022-09-30"
   },
-
-  "LTV": {
-    "loan_1_no_outstanding": 0.75,
-    "loan_1_with_outstanding": 0.45,
-    "loan_2_no_outstanding": 0.45,
-    "loan_2_with_outstanding": 0.30,
-    "loan_3_plus": 0.35,
-    "HDB_loan": 0.80
+  "housing_grants": {
+    "EHG": {
+      "description": "Enhanced CPF Housing Grant \u2014 income-based, for first-timers",
+      "max_amount": 120000,
+      "income_ceiling": 9000,
+      "eligible_flat_types": [
+        "2-room Flexi",
+        "3-room",
+        "4-room",
+        "5-room"
+      ],
+      "tiers": [
+        {
+          "income_above": 0,
+          "income_upto": 1500,
+          "grant": 120000
+        },
+        {
+          "income_above": 1500,
+          "income_upto": 2000,
+          "grant": 110000
+        },
+        {
+          "income_above": 2000,
+          "income_upto": 2500,
+          "grant": 100000
+        },
+        {
+          "income_above": 2500,
+          "income_upto": 3000,
+          "grant": 90000
+        },
+        {
+          "income_above": 3000,
+          "income_upto": 3500,
+          "grant": 80000
+        },
+        {
+          "income_above": 3500,
+          "income_upto": 4000,
+          "grant": 70000
+        },
+        {
+          "income_above": 4000,
+          "income_upto": 4500,
+          "grant": 60000
+        },
+        {
+          "income_above": 4500,
+          "income_upto": 5000,
+          "grant": 50000
+        },
+        {
+          "income_above": 5000,
+          "income_upto": 5500,
+          "grant": 40000
+        },
+        {
+          "income_above": 5500,
+          "income_upto": 6000,
+          "grant": 30000
+        },
+        {
+          "income_above": 6000,
+          "income_upto": 6500,
+          "grant": 20000
+        },
+        {
+          "income_above": 6500,
+          "income_upto": 7000,
+          "grant": 10000
+        },
+        {
+          "income_above": 7000,
+          "income_upto": 9000,
+          "grant": 5000
+        }
+      ]
+    },
+    "PHG": {
+      "description": "Proximity Housing Grant \u2014 live near parents/children",
+      "within_4km": 10000,
+      "same_town_or_within_4km_married_child": 20000
+    },
+    "SHG_resale": {
+      "description": "Step-Up CPF Housing Grant (resale 2-3 room, from 2-room rental)",
+      "amount": 15000
+    },
+    "FHG": {
+      "description": "Family Grant \u2014 resale flat, first-timer family",
+      "sc_sc": 80000,
+      "sc_pr": 50000,
+      "income_ceiling": 14000
+    },
+    "HHG": {
+      "description": "Half-Housing Grant \u2014 first-timer + second-timer couple",
+      "amount": 40000,
+      "income_ceiling": 14000
+    },
+    "_source": "HDB",
+    "_last_major_change": "2024-08-20",
+    "_note": "FHG amounts raised in Aug 2024 (from 50k/40k to 80k/50k)"
   },
-
-  "TDSR": {
-    "threshold": 0.55
+  "property_tax": {
+    "owner_occupier": {
+      "bands": [
+        {
+          "av_from": 0,
+          "av_to": 8000,
+          "rate": 0.0
+        },
+        {
+          "av_from": 8001,
+          "av_to": 30000,
+          "rate": 0.04
+        },
+        {
+          "av_from": 30001,
+          "av_to": 40000,
+          "rate": 0.06
+        },
+        {
+          "av_from": 40001,
+          "av_to": 55000,
+          "rate": 0.1
+        },
+        {
+          "av_from": 55001,
+          "av_to": 70000,
+          "rate": 0.14
+        },
+        {
+          "av_from": 70001,
+          "av_to": 85000,
+          "rate": 0.18
+        },
+        {
+          "av_from": 85001,
+          "av_to": 100000,
+          "rate": 0.22
+        },
+        {
+          "av_from": 100001,
+          "av_to": null,
+          "rate": 0.27
+        }
+      ]
+    },
+    "non_owner_occupier": {
+      "bands": [
+        {
+          "av_from": 0,
+          "av_to": 30000,
+          "rate": 0.12
+        },
+        {
+          "av_from": 30001,
+          "av_to": 60000,
+          "rate": 0.2
+        },
+        {
+          "av_from": 60001,
+          "av_to": 90000,
+          "rate": 0.28
+        },
+        {
+          "av_from": 90001,
+          "av_to": null,
+          "rate": 0.36
+        }
+      ]
+    },
+    "_note": "AV = Annual Value (IRAS-assessed). Owner-occupier rates phased in: 2023/2024.",
+    "_source": "IRAS",
+    "_last_changed": "2024-01-01"
   },
-
-  "MSR": {
-    "threshold": 0.30,
-    "applies_to": ["HDB", "EC_within_MOP"]
+  "other": {
+    "GST": {
+      "current_rate": 0.09,
+      "_last_changed": "2024-01-01",
+      "_note": "Raised from 8% to 9% on 1 Jan 2024"
+    },
+    "agent_commission": {
+      "seller_typical": 0.02,
+      "buyer_typical": 0.01,
+      "_note": "No fixed regulation \u2014 market rate, typically 1-2%"
+    },
+    "legal_fees_estimate": {
+      "below_500k": 2500,
+      "500k_to_1m": 3000,
+      "above_1m": 3500,
+      "_note": "Estimates only. Conveyancing fees vary by law firm."
+    }
   }
 }
