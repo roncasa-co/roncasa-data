@@ -1,0 +1,59 @@
+{
+  "_last_updated": "2026-05-31",
+  "_source": "IRAS / CPF Board / MAS",
+  
+  "BSD": {
+    "residential": [
+      { "band_from": 0,       "band_to": 180000,  "rate": 0.01 },
+      { "band_from": 180000,  "band_to": 360000,  "rate": 0.02 },
+      { "band_from": 360000,  "band_to": 1000000, "rate": 0.03 },
+      { "band_from": 1000000, "band_to": 1500000, "rate": 0.04 },
+      { "band_from": 1500000, "band_to": 3000000, "rate": 0.05 },
+      { "band_from": 3000000, "band_to": null,    "rate": 0.06 }
+    ]
+  },
+
+  "ABSD": {
+    "SC_1st":  0.00,
+    "SC_2nd":  0.20,
+    "SC_3rd":  0.30,
+    "PR_1st":  0.05,
+    "PR_2nd":  0.30,
+    "PR_3rd":  0.35,
+    "foreigner": 0.60,
+    "entity":  0.65
+  },
+
+  "SSD": {
+    "holding_years": [
+      { "within_years": 1, "rate": 0.12 },
+      { "within_years": 2, "rate": 0.08 },
+      { "within_years": 3, "rate": 0.04 },
+      { "within_years": 4, "rate": 0.00 }
+    ]
+  },
+
+  "CPF": {
+    "OA_interest_rate": 0.025,
+    "accrued_interest_note": "OA rate applies to CPF used for property",
+    "withdrawal_limit_pct_of_valuation": 1.20
+  },
+
+  "LTV": {
+    "loan_1_no_outstanding": 0.75,
+    "loan_1_with_outstanding": 0.45,
+    "loan_2_no_outstanding": 0.45,
+    "loan_2_with_outstanding": 0.30,
+    "loan_3_plus": 0.35,
+    "HDB_loan": 0.80
+  },
+
+  "TDSR": {
+    "threshold": 0.55
+  },
+
+  "MSR": {
+    "threshold": 0.30,
+    "applies_to": ["HDB", "EC_within_MOP"]
+  }
+}
