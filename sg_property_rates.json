@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-05T01:59:08+08:00",
+    "last_updated": "2026-06-05T02:02:50+08:00",
     "last_updated_date": "2026-06-05",
     "repo": "roncasa-co/roncasa-data",
     "raw_url": "https://raw.githubusercontent.com/roncasa-co/roncasa-data/main/sg_property_rates.json"
@@ -141,7 +141,7 @@
   "gst": {
     "rate": 0.09,
     "effective_from": "2024-01-01",
-    "_source": "fallback"
+    "_source": "DataGov IRAS d_2e65ed309aa8d449d1bd0c7ef7c7e4da"
   },
   "hdb_loan_rate": {
     "rate": 0.026,
