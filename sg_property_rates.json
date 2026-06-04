@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-06-04T19:35:22.707236+00:00",
+  "last_updated_utc": "2026-06-04T19:48:29.499870+00:00",
   "cpf_contribution": {
     "effective_from": "2007-07",
     "bands": [
@@ -74,10 +74,6 @@
         "contribution_rate": "12.5"
       }
     ]
-  },
-  "cpf_allocation": {
-    "effective_from": "fallback",
-    "bands": []
   },
   "ow_ceiling": 8000.0,
   "bsd_rates": [
@@ -219,6 +215,7 @@
   "sora_market": {
     "date": null,
     "sora": null,
+    "comp_sora_1m": null,
     "comp_sora_3m": null
   }
 }
