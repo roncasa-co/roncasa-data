@@ -1,291 +1,224 @@
 {
-  "meta": {
-    "last_updated": "2026-06-05T02:47:14+08:00",
-    "last_updated_date": "2026-06-05",
-    "repo": "roncasa-co/roncasa-data",
-    "raw_url": "https://raw.githubusercontent.com/roncasa-co/roncasa-data/main/sg_property_rates.json"
-  },
-  "cpf_contribution_rates": {
+  "last_updated_utc": "2026-06-04T19:35:22.707236+00:00",
+  "cpf_contribution": {
     "effective_from": "2007-07",
     "bands": [
       {
+        "_id": 491,
+        "effective_from": "2007-07",
         "age_grp": "35 years & below",
-        "employee": 20.0,
-        "employer": 14.5,
-        "total": 34.5
+        "contributing_party": "Employer",
+        "contribution_rate": "14.5"
       },
       {
-        "age_grp": "Above 35 - 45 years",
-        "employee": 20.0,
-        "employer": 14.5,
-        "total": 34.5
-      },
-      {
-        "age_grp": "Above 45 - 50 years",
-        "employee": 20.0,
-        "employer": 14.5,
-        "total": 34.5
-      },
-      {
-        "age_grp": "Above 50 - 55 years",
-        "employee": 18.0,
-        "employer": 10.5,
-        "total": 28.5
-      },
-      {
-        "age_grp": "Above 55 - 60 years",
-        "employee": 12.5,
-        "employer": 7.5,
-        "total": 20.0
-      }
-    ],
-    "_source": "DataGov CPF d_98ffa142ae0dec40391f78f81d26aca9"
-  },
-  "cpf_allocation_rates": {
-    "effective_from": "2026-01",
-    "bands": [
-      {
+        "_id": 492,
+        "effective_from": "2007-07",
         "age_grp": "35 years & below",
-        "": 0.2162
+        "contributing_party": "Employee",
+        "contribution_rate": "20"
       },
       {
+        "_id": 493,
+        "effective_from": "2007-07",
         "age_grp": "Above 35 - 45 years",
-        "": 0.2432
+        "contributing_party": "Employer",
+        "contribution_rate": "14.5"
       },
       {
+        "_id": 494,
+        "effective_from": "2007-07",
+        "age_grp": "Above 35 - 45 years",
+        "contributing_party": "Employee",
+        "contribution_rate": "20"
+      },
+      {
+        "_id": 495,
+        "effective_from": "2007-07",
         "age_grp": "Above 45 - 50 years",
-        "": 0.2702
+        "contributing_party": "Employer",
+        "contribution_rate": "14.5"
       },
       {
+        "_id": 496,
+        "effective_from": "2007-07",
+        "age_grp": "Above 45 - 50 years",
+        "contributing_party": "Employee",
+        "contribution_rate": "20"
+      },
+      {
+        "_id": 497,
+        "effective_from": "2007-07",
         "age_grp": "Above 50 - 55 years",
-        "": 0.2837
+        "contributing_party": "Employer",
+        "contribution_rate": "10.5"
       },
       {
+        "_id": 498,
+        "effective_from": "2007-07",
+        "age_grp": "Above 50 - 55 years",
+        "contributing_party": "Employee",
+        "contribution_rate": "18"
+      },
+      {
+        "_id": 499,
+        "effective_from": "2007-07",
         "age_grp": "Above 55 - 60 years",
-        "": 0.3088
+        "contributing_party": "Employer",
+        "contribution_rate": "7.5"
       },
       {
-        "age_grp": "Above 60 - 65 years",
-        "": 0.42
-      },
-      {
-        "age_grp": "Above 65 - 70 years",
-        "": 0.6363
-      },
-      {
-        "age_grp": "Above 70 years",
-        "": 0.84
+        "_id": 500,
+        "effective_from": "2007-07",
+        "age_grp": "Above 55 - 60 years",
+        "contributing_party": "Employee",
+        "contribution_rate": "12.5"
       }
-    ],
-    "_source": "DataGov CPF d_97ec9a2ce15cbf253128e48779a3fba0",
-    "_note": "OA allocation decreases with age. From 2025: SA closed, 55+ contributions go to RA."
+    ]
   },
-  "ordinary_wage_ceiling": {
-    "amount": 8000.0,
-    "effective_from": "2026-01",
-    "_source": "DataGov CPF d_fcf9b47a2df0c9183875bbfb1c370077",
-    "_note": "Raised to $8,000 Jan 2026. Live-pulled \u2014 not hardcoded."
+  "cpf_allocation": {
+    "effective_from": "fallback",
+    "bands": []
   },
-  "bsd": {
-    "effective_from": "2023-02-15",
-    "residential_bands": [
-      {
-        "band": "First $180,000",
-        "rate": 0.01
-      },
-      {
-        "band": "Next $180,000",
-        "rate": 0.02
-      },
-      {
-        "band": "Next $640,000",
-        "rate": 0.03
-      },
-      {
-        "band": "Next $500,000",
-        "rate": 0.04
-      },
-      {
-        "band": "Next $1,500,000",
-        "rate": 0.05
-      },
-      {
-        "band": "Remainder",
-        "rate": 0.06
-      }
-    ],
-    "_source": "fallback hardcoded"
-  },
-  "ssd": {
-    "effective_from": "2017-03-11",
-    "bands": [
-      {
-        "holding_period": "Within 1 year",
-        "rate": 0.12
-      },
-      {
-        "holding_period": "Within 2 years",
-        "rate": 0.08
-      },
-      {
-        "holding_period": "Within 3 years",
-        "rate": 0.04
-      },
-      {
-        "holding_period": "After 3 years",
-        "rate": 0.0
-      }
-    ],
-    "_source": "fallback hardcoded"
-  },
-  "gst": {
-    "rate": 0.09,
-    "effective_from": "2024-01-01",
-    "_source": "fallback"
-  },
-  "hdb_loan_rate": {
-    "rate": 0.026,
-    "_source": "Hardcoded fallback",
-    "_note": "HDB concessionary rate = CPF OA rate + 0.1% = 2.6% as of Q1 2026"
-  },
-  "absd": {
-    "SC_1st": {
-      "rate": 0.0,
-      "label": "SC 1st property"
+  "ow_ceiling": 8000.0,
+  "bsd_rates": [
+    {
+      "_id": 20,
+      "from": "2025-07-04",
+      "stamp_duty_type": "Residential Seller's Stamp Duty",
+      "document_type": "Sale & Purchase or Gift of Residential Immovable Property or in the case of mixed purposes, the part for residential purposes",
+      "holding_period": "Within 1 year",
+      "duty_levied_on": "Purchase price or market value, whichever is higher",
+      "duty_amount": "na",
+      "duty_rate": "16"
     },
-    "SC_2nd": {
-      "rate": 0.2,
-      "label": "SC 2nd property"
+    {
+      "_id": 21,
+      "from": "2025-07-04",
+      "stamp_duty_type": "Residential Seller's Stamp Duty",
+      "document_type": "Sale & Purchase or Gift of Residential Immovable Property or in the case of mixed purposes, the part for residential purposes",
+      "holding_period": "Exceeding 1 year but not exceeding 2 years",
+      "duty_levied_on": "Purchase price or market value, whichever is higher",
+      "duty_amount": "na",
+      "duty_rate": "12"
     },
-    "SC_3rd": {
-      "rate": 0.3,
-      "label": "SC 3rd+ property"
+    {
+      "_id": 22,
+      "from": "2025-07-04",
+      "stamp_duty_type": "Residential Seller's Stamp Duty",
+      "document_type": "Sale & Purchase or Gift of Residential Immovable Property or in the case of mixed purposes, the part for residential purposes",
+      "holding_period": "Exceeding 2 years but not exceeding 3 years",
+      "duty_levied_on": "Purchase price or market value, whichever is higher",
+      "duty_amount": "na",
+      "duty_rate": "8"
     },
-    "PR_1st": {
-      "rate": 0.05,
-      "label": "PR 1st property"
+    {
+      "_id": 23,
+      "from": "2025-07-04",
+      "stamp_duty_type": "Residential Seller's Stamp Duty",
+      "document_type": "Sale & Purchase or Gift of Residential Immovable Property or in the case of mixed purposes, the part for residential purposes",
+      "holding_period": "Exceeding 3 years but not exceeding 4 years",
+      "duty_levied_on": "Purchase price or market value, whichever is higher",
+      "duty_amount": "na",
+      "duty_rate": "4"
+    }
+  ],
+  "ssd_rates": [
+    {
+      "_id": 54,
+      "from": "2023-04-27",
+      "stamp_duty_type": "Additional Buyer's Stamp Duty",
+      "document_type": "Sale & Purchase or Gift of Residential Immovable Property or in the case of mixed purposes, the part for residential purposes",
+      "transaction_type": "Entities buying any residential property",
+      "duty_levied_on": "Purchase price or market value, whichever is higher",
+      "duty_amount": "na",
+      "duty_rate": "65"
     },
-    "PR_2nd": {
-      "rate": 0.3,
-      "label": "PR 2nd property"
+    {
+      "_id": 55,
+      "from": "2023-04-27",
+      "stamp_duty_type": "Additional Buyer's Stamp Duty",
+      "document_type": "Sale & Purchase or Gift of Residential Immovable Property or in the case of mixed purposes, the part for residential purposes",
+      "transaction_type": "Foreigners buying any residential property",
+      "duty_levied_on": "Purchase price or market value, whichever is higher",
+      "duty_amount": "na",
+      "duty_rate": "60"
     },
-    "PR_3rd": {
-      "rate": 0.35,
-      "label": "PR 3rd+ property"
+    {
+      "_id": 56,
+      "from": "2023-04-27",
+      "stamp_duty_type": "Additional Buyer's Stamp Duty",
+      "document_type": "Sale & Purchase or Gift of Residential Immovable Property or in the case of mixed purposes, the part for residential purposes",
+      "transaction_type": "Singapore Permanent Residents buying their first residential property",
+      "duty_levied_on": "Purchase price or market value, whichever is higher",
+      "duty_amount": "na",
+      "duty_rate": "5"
     },
-    "foreigner": {
-      "rate": 0.6,
-      "label": "Foreigner (any)"
+    {
+      "_id": 57,
+      "from": "2023-04-27",
+      "stamp_duty_type": "Additional Buyer's Stamp Duty",
+      "document_type": "Sale & Purchase or Gift of Residential Immovable Property or in the case of mixed purposes, the part for residential purposes",
+      "transaction_type": "Singapore Permanent Residents buying their second residential property",
+      "duty_levied_on": "Purchase price or market value, whichever is higher",
+      "duty_amount": "na",
+      "duty_rate": "30"
     },
-    "entity": {
-      "rate": 0.65,
-      "label": "Entity / company"
+    {
+      "_id": 58,
+      "from": "2023-04-27",
+      "stamp_duty_type": "Additional Buyer's Stamp Duty",
+      "document_type": "Sale & Purchase or Gift of Residential Immovable Property or in the case of mixed purposes, the part for residential purposes",
+      "transaction_type": "Singapore Permanent Residents buying their third and subsequent residential property",
+      "duty_levied_on": "Purchase price or market value, whichever is higher",
+      "duty_amount": "na",
+      "duty_rate": "35"
     },
-    "developer_remittable": {
-      "rate": 0.35,
-      "label": "Developer (remittable)"
+    {
+      "_id": 59,
+      "from": "2023-04-27",
+      "stamp_duty_type": "Additional Buyer's Stamp Duty",
+      "document_type": "Sale & Purchase or Gift of Residential Immovable Property or in the case of mixed purposes, the part for residential purposes",
+      "transaction_type": "Singapore Citizens buying their second residential property",
+      "duty_levied_on": "Purchase price or market value, whichever is higher",
+      "duty_amount": "na",
+      "duty_rate": "20"
     },
-    "developer_non_remittable": {
-      "rate": 0.05,
-      "label": "Developer (non-remittable)"
+    {
+      "_id": 60,
+      "from": "2023-04-27",
+      "stamp_duty_type": "Additional Buyer's Stamp Duty",
+      "document_type": "Sale & Purchase or Gift of Residential Immovable Property or in the case of mixed purposes, the part for residential purposes",
+      "transaction_type": "Singapore Citizens buying their third and subsequent residential property",
+      "duty_levied_on": "Purchase price or market value, whichever is higher",
+      "duty_amount": "na",
+      "duty_rate": "30"
     },
-    "joint_purchase_rule": "Highest applicable buyer profile rate applies to full purchase price",
-    "fta_note": "US/Iceland/Liechtenstein nationals treated as SC under FTA",
-    "_last_changed": "2023-04-27",
-    "_source": "IRAS \u2014 no DataGov API. Hardcoded."
-  },
-  "cpf_interest_rates": {
-    "OA_floor": 0.025,
-    "OA_current": 0.025,
-    "SA_floor": 0.04,
-    "SA_current": 0.04,
-    "MA_floor": 0.04,
-    "MA_current": 0.04,
-    "RA_floor": 0.04,
-    "RA_current": 0.04,
-    "extra_1pct_first_30k_OA": 0.01,
-    "extra_1pct_next_30k_OA": 0.01,
-    "_source": "CPF Board \u2014 statutory floors, last changed 2008",
-    "_note": "OA floor 2.5% set by CPF Act. Current rate announced quarterly \u2014 floor not breached since 2008."
-  },
-  "retirement_sums": {
-    "year": 2025,
-    "BRS": 106500,
-    "FRS": 213000,
-    "ERS": 426000,
-    "_source": "CPF Board, effective 2025",
-    "_note": "Increases ~3-4% annually. Updated each January. 2026 figures not yet announced."
-  },
-  "loan_rules": {
-    "TDSR": {
-      "threshold": 0.55,
-      "applies_to": "All property loans",
-      "_last_changed": "2022-09-30"
+    {
+      "_id": 61,
+      "from": "2023-04-27",
+      "stamp_duty_type": "Additional Buyer's Stamp Duty",
+      "document_type": "Sale & Purchase or Gift of Residential Immovable Property or in the case of mixed purposes, the part for residential purposes",
+      "transaction_type": "Housing Developers buying any residential property",
+      "duty_levied_on": "Purchase price or market value, whichever is higher",
+      "duty_amount": "na",
+      "duty_rate": "35 + additional 5 (non-remittable)"
     },
-    "MSR": {
-      "threshold": 0.3,
-      "applies_to": [
-        "HDB flat (bank loan)",
-        "EC within MOP"
-      ],
-      "_note": "MSR is a subset of TDSR. Both apply for HDB bank loans."
-    },
-    "LTV": {
-      "private_bank_1st_no_outstanding": 0.75,
-      "private_bank_1st_with_outstanding": 0.45,
-      "private_bank_2nd_no_outstanding": 0.45,
-      "private_bank_2nd_with_outstanding": 0.3,
-      "private_bank_3rd_plus": 0.35,
-      "hdb_concessionary_loan": 0.8
-    },
-    "min_cash_downpayment": {
-      "private_bank_1st": 0.05,
-      "private_bank_subsequent": 0.25,
-      "hdb_loan": 0.0,
-      "_note": "Minimum cash (not CPF) portion of downpayment"
-    },
-    "stress_test_buffer": 0.03,
-    "_source": "MAS"
-  },
-  "housing_grants": {
-    "EHG": {
-      "description": "Enhanced CPF Housing Grant (first-timers, income-based)",
-      "max_families": 80000,
-      "max_singles": 40000,
-      "income_ceiling_monthly": 9000,
-      "_last_changed": "2024-08-20"
-    },
-    "PHG": {
-      "description": "Proximity Housing Grant (live near parents/children)",
-      "resale_within_4km": 10000,
-      "resale_with_married_child_or_same_town": 20000
-    },
-    "FHG": {
-      "description": "Family Grant (resale, first-timer family)",
-      "sc_sc": 80000,
-      "sc_pr": 50000,
-      "income_ceiling_monthly": 14000,
-      "_last_changed": "2024-08-20",
-      "_note": "Raised from $50k/$40k to $80k/$50k in Aug 2024"
-    },
-    "HHG": {
-      "description": "Half-Housing Grant (first-timer + second-timer couple)",
-      "amount": 40000,
-      "income_ceiling_monthly": 14000
-    },
-    "SHG_resale": {
-      "description": "Step-Up Grant (from 2-room rental, buying 2-3 room resale)",
-      "amount": 15000
-    },
-    "_source": "HDB",
-    "_last_major_change": "2024-08-20"
-  },
-  "sora": {
+    {
+      "_id": 63,
+      "from": "2023-04-27",
+      "stamp_duty_type": "Additional Buyer's Stamp Duty",
+      "document_type": "Sale & Purchase or Gift of Residential Immovable Property or in the case of mixed purposes, the part for residential purposes",
+      "transaction_type": "Trustee buying any residential property",
+      "duty_levied_on": "Purchase price or market value, whichever is higher",
+      "duty_amount": "na",
+      "duty_rate": "65"
+    }
+  ],
+  "gst": 0.09,
+  "hdb_loan": 0.026,
+  "sora_market": {
     "date": null,
     "sora": null,
-    "comp_sora_1m": null,
-    "comp_sora_3m": null,
-    "_source": "fetch failed",
-    "_note": "Check MAS API: https://eservices.mas.gov.sg/statistics/dir/domesticinterestrates.aspx"
+    "comp_sora_3m": null
   }
 }
