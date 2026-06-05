@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-06-04T19:48:29.499870+00:00",
+  "last_updated_utc": "2026-06-05T02:22:20.705822+00:00",
   "cpf_contribution": {
     "effective_from": "2007-07",
     "bands": [
@@ -74,6 +74,45 @@
         "contribution_rate": "12.5"
       }
     ]
+  },
+  "cpf_allocation": {
+    "effective_from": "2026-01",
+    "bands": [
+      {
+        "age_grp": "35 years & below",
+        "": 0.2162
+      },
+      {
+        "age_grp": "Above 35 - 45 years",
+        "": 0.2432
+      },
+      {
+        "age_grp": "Above 45 - 50 years",
+        "": 0.2702
+      },
+      {
+        "age_grp": "Above 50 - 55 years",
+        "": 0.2837
+      },
+      {
+        "age_grp": "Above 55 - 60 years",
+        "": 0.3088
+      },
+      {
+        "age_grp": "Above 60 - 65 years",
+        "": 0.42
+      },
+      {
+        "age_grp": "Above 65 - 70 years",
+        "": 0.6363
+      },
+      {
+        "age_grp": "Above 70 years",
+        "": 0.84
+      }
+    ],
+    "_source": "DataGov CPF d_97ec9a2ce15cbf253128e48779a3fba0",
+    "_note": "OA allocation decreases with age. From 2025: SA closed, 55+ contributions go to RA."
   },
   "ow_ceiling": 8000.0,
   "bsd_rates": [
