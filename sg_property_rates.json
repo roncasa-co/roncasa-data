@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-07-09T18:48:39.038672+00:00",
+  "last_updated_utc": "2026-07-10T18:21:25.508181+00:00",
   "cpf_contribution": {
     "effective_from": "2007-07",
     "bands": [
@@ -117,48 +117,6 @@
   "ow_ceiling": 8000.0,
   "bsd_rates": [
     {
-      "_id": 20,
-      "from": "2025-07-04",
-      "stamp_duty_type": "Residential Seller's Stamp Duty",
-      "document_type": "Sale & Purchase or Gift of Residential Immovable Property or in the case of mixed purposes, the part for residential purposes",
-      "holding_period": "Within 1 year",
-      "duty_levied_on": "Purchase price or market value, whichever is higher",
-      "duty_amount": "na",
-      "duty_rate": "16"
-    },
-    {
-      "_id": 21,
-      "from": "2025-07-04",
-      "stamp_duty_type": "Residential Seller's Stamp Duty",
-      "document_type": "Sale & Purchase or Gift of Residential Immovable Property or in the case of mixed purposes, the part for residential purposes",
-      "holding_period": "Exceeding 1 year but not exceeding 2 years",
-      "duty_levied_on": "Purchase price or market value, whichever is higher",
-      "duty_amount": "na",
-      "duty_rate": "12"
-    },
-    {
-      "_id": 22,
-      "from": "2025-07-04",
-      "stamp_duty_type": "Residential Seller's Stamp Duty",
-      "document_type": "Sale & Purchase or Gift of Residential Immovable Property or in the case of mixed purposes, the part for residential purposes",
-      "holding_period": "Exceeding 2 years but not exceeding 3 years",
-      "duty_levied_on": "Purchase price or market value, whichever is higher",
-      "duty_amount": "na",
-      "duty_rate": "8"
-    },
-    {
-      "_id": 23,
-      "from": "2025-07-04",
-      "stamp_duty_type": "Residential Seller's Stamp Duty",
-      "document_type": "Sale & Purchase or Gift of Residential Immovable Property or in the case of mixed purposes, the part for residential purposes",
-      "holding_period": "Exceeding 3 years but not exceeding 4 years",
-      "duty_levied_on": "Purchase price or market value, whichever is higher",
-      "duty_amount": "na",
-      "duty_rate": "4"
-    }
-  ],
-  "ssd_rates": [
-    {
       "_id": 54,
       "from": "2023-04-27",
       "stamp_duty_type": "Additional Buyer's Stamp Duty",
@@ -249,14 +207,91 @@
       "duty_rate": "65"
     }
   ],
+  "ssd_rates": [
+    {
+      "_id": 20,
+      "from": "2025-07-04",
+      "stamp_duty_type": "Residential Seller's Stamp Duty",
+      "document_type": "Sale & Purchase or Gift of Residential Immovable Property or in the case of mixed purposes, the part for residential purposes",
+      "holding_period": "Within 1 year",
+      "duty_levied_on": "Purchase price or market value, whichever is higher",
+      "duty_amount": "na",
+      "duty_rate": "16"
+    },
+    {
+      "_id": 21,
+      "from": "2025-07-04",
+      "stamp_duty_type": "Residential Seller's Stamp Duty",
+      "document_type": "Sale & Purchase or Gift of Residential Immovable Property or in the case of mixed purposes, the part for residential purposes",
+      "holding_period": "Exceeding 1 year but not exceeding 2 years",
+      "duty_levied_on": "Purchase price or market value, whichever is higher",
+      "duty_amount": "na",
+      "duty_rate": "12"
+    },
+    {
+      "_id": 22,
+      "from": "2025-07-04",
+      "stamp_duty_type": "Residential Seller's Stamp Duty",
+      "document_type": "Sale & Purchase or Gift of Residential Immovable Property or in the case of mixed purposes, the part for residential purposes",
+      "holding_period": "Exceeding 2 years but not exceeding 3 years",
+      "duty_levied_on": "Purchase price or market value, whichever is higher",
+      "duty_amount": "na",
+      "duty_rate": "8"
+    },
+    {
+      "_id": 23,
+      "from": "2025-07-04",
+      "stamp_duty_type": "Residential Seller's Stamp Duty",
+      "document_type": "Sale & Purchase or Gift of Residential Immovable Property or in the case of mixed purposes, the part for residential purposes",
+      "holding_period": "Exceeding 3 years but not exceeding 4 years",
+      "duty_levied_on": "Purchase price or market value, whichever is higher",
+      "duty_amount": "na",
+      "duty_rate": "4"
+    }
+  ],
+  "absd_rates": {
+    "effective_from": "2023-04-27",
+    "citizen": {
+      "1st": 0.0,
+      "2nd": 0.2,
+      "3rd_plus": 0.3
+    },
+    "pr": {
+      "1st": 0.05,
+      "2nd": 0.3,
+      "3rd_plus": 0.35
+    },
+    "foreigner": {
+      "any": 0.6
+    },
+    "entity": {
+      "any": 0.65
+    },
+    "trust": {
+      "any": 0.65
+    },
+    "_source": "IRAS ABSD -- hardcoded (JS-rendered page, cannot scrape)",
+    "_last_verified": "2026-07-10",
+    "_next_check_due": "on iras_absd tripwire alert (page_watch.py)"
+  },
+  "cpf_retirement_sums": {
+    "cohort_year": 2026,
+    "brs": 110200,
+    "frs": 220400,
+    "ers": 440800,
+    "ers_multiple_of_brs": 4,
+    "_source": "CPF Board -- hardcoded (JS-rendered page, cannot scrape)",
+    "_last_verified": "2026-07-10",
+    "_next_check_due": "2027-01-01"
+  },
   "gst": 0.09,
   "hdb_loan": 0.026,
   "sora_market": {
-    "date": "2026-07-08",
-    "sora": 0.012645,
-    "comp_sora_1m": 0.011966,
-    "comp_sora_3m": 0.011153,
-    "comp_sora_6m": 0.010931,
+    "date": "2026-07-09",
+    "sora": 0.010769,
+    "comp_sora_1m": 0.011883,
+    "comp_sora_3m": 0.011157,
+    "comp_sora_6m": 0.010932,
     "sf_deposit_rate": null,
     "sf_borrowing_rate": null
   }
