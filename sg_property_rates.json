@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-09-22T20:01:16.792771+00:00",
+  "last_updated_utc": "2026-09-23T19:57:28.803625+00:00",
   "cpf_contribution": {
     "effective_from": "2007-07",
     "bands": [
@@ -287,11 +287,11 @@
   "gst": 0.09,
   "hdb_loan": 0.026,
   "sora_market": {
-    "date": "2026-09-21",
-    "sora": 0.012327,
-    "comp_sora_1m": 0.012346,
-    "comp_sora_3m": 0.012191,
-    "comp_sora_6m": 0.011497,
+    "date": "2026-09-22",
+    "sora": 0.011906,
+    "comp_sora_1m": 0.012298,
+    "comp_sora_3m": 0.0122,
+    "comp_sora_6m": 0.011493,
     "sf_deposit_rate": null,
     "sf_borrowing_rate": null
   }
