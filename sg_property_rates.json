@@ -1,77 +1,119 @@
 {
-  "last_updated_utc": "2026-10-03T19:41:33.440978+00:00",
+  "last_updated_utc": "2026-10-04T18:26:51.565731+00:00",
   "cpf_contribution": {
-    "effective_from": "2007-07",
+    "effective_from": "2026-01",
     "bands": [
       {
-        "_id": 491,
-        "effective_from": "2007-07",
+        "_id": 667,
+        "effective_from": "2026-01",
         "age_grp": "35 years & below",
         "contributing_party": "Employer",
-        "contribution_rate": "14.5"
+        "contribution_rate": "17"
       },
       {
-        "_id": 492,
-        "effective_from": "2007-07",
+        "_id": 668,
+        "effective_from": "2026-01",
         "age_grp": "35 years & below",
         "contributing_party": "Employee",
         "contribution_rate": "20"
       },
       {
-        "_id": 493,
-        "effective_from": "2007-07",
+        "_id": 669,
+        "effective_from": "2026-01",
         "age_grp": "Above 35 - 45 years",
         "contributing_party": "Employer",
-        "contribution_rate": "14.5"
+        "contribution_rate": "17"
       },
       {
-        "_id": 494,
-        "effective_from": "2007-07",
+        "_id": 670,
+        "effective_from": "2026-01",
         "age_grp": "Above 35 - 45 years",
         "contributing_party": "Employee",
         "contribution_rate": "20"
       },
       {
-        "_id": 495,
-        "effective_from": "2007-07",
+        "_id": 671,
+        "effective_from": "2026-01",
         "age_grp": "Above 45 - 50 years",
         "contributing_party": "Employer",
-        "contribution_rate": "14.5"
+        "contribution_rate": "17"
       },
       {
-        "_id": 496,
-        "effective_from": "2007-07",
+        "_id": 672,
+        "effective_from": "2026-01",
         "age_grp": "Above 45 - 50 years",
         "contributing_party": "Employee",
         "contribution_rate": "20"
       },
       {
-        "_id": 497,
-        "effective_from": "2007-07",
+        "_id": 673,
+        "effective_from": "2026-01",
         "age_grp": "Above 50 - 55 years",
         "contributing_party": "Employer",
-        "contribution_rate": "10.5"
+        "contribution_rate": "17"
       },
       {
-        "_id": 498,
-        "effective_from": "2007-07",
+        "_id": 674,
+        "effective_from": "2026-01",
         "age_grp": "Above 50 - 55 years",
+        "contributing_party": "Employee",
+        "contribution_rate": "20"
+      },
+      {
+        "_id": 675,
+        "effective_from": "2026-01",
+        "age_grp": "Above 55 - 60 years",
+        "contributing_party": "Employer",
+        "contribution_rate": "16"
+      },
+      {
+        "_id": 676,
+        "effective_from": "2026-01",
+        "age_grp": "Above 55 - 60 years",
         "contributing_party": "Employee",
         "contribution_rate": "18"
       },
       {
-        "_id": 499,
-        "effective_from": "2007-07",
-        "age_grp": "Above 55 - 60 years",
+        "_id": 677,
+        "effective_from": "2026-01",
+        "age_grp": "Above 60 - 65 years",
+        "contributing_party": "Employer",
+        "contribution_rate": "12.5"
+      },
+      {
+        "_id": 678,
+        "effective_from": "2026-01",
+        "age_grp": "Above 60 - 65 years",
+        "contributing_party": "Employee",
+        "contribution_rate": "12.5"
+      },
+      {
+        "_id": 679,
+        "effective_from": "2026-01",
+        "age_grp": "Above 65 - 70 years",
+        "contributing_party": "Employer",
+        "contribution_rate": "9"
+      },
+      {
+        "_id": 680,
+        "effective_from": "2026-01",
+        "age_grp": "Above 65 - 70 years",
+        "contributing_party": "Employee",
+        "contribution_rate": "7.5"
+      },
+      {
+        "_id": 681,
+        "effective_from": "2026-01",
+        "age_grp": "Above 70 years",
         "contributing_party": "Employer",
         "contribution_rate": "7.5"
       },
       {
-        "_id": 500,
-        "effective_from": "2007-07",
-        "age_grp": "Above 55 - 60 years",
+        "_id": 682,
+        "effective_from": "2026-01",
+        "age_grp": "Above 70 years",
         "contributing_party": "Employee",
-        "contribution_rate": "12.5"
+        "contribution_rate": "5"
       }
     ]
   },
@@ -80,35 +122,51 @@
     "bands": [
       {
         "age_grp": "35 years & below",
-        "": 0.2162
+        "ORDINARY": 0.6217,
+        "SPECIAL": 0.1621,
+        "MEDISAVE": 0.2162
       },
       {
         "age_grp": "Above 35 - 45 years",
-        "": 0.2432
+        "ORDINARY": 0.5677,
+        "SPECIAL": 0.1891,
+        "MEDISAVE": 0.2432
       },
       {
         "age_grp": "Above 45 - 50 years",
-        "": 0.2702
+        "ORDINARY": 0.5136,
+        "SPECIAL": 0.2162,
+        "MEDISAVE": 0.2702
       },
       {
         "age_grp": "Above 50 - 55 years",
-        "": 0.2837
+        "ORDINARY": 0.4055,
+        "SPECIAL": 0.3108,
+        "MEDISAVE": 0.2837
       },
       {
         "age_grp": "Above 55 - 60 years",
-        "": 0.3088
+        "ORDINARY": 0.353,
+        "RETIREMENT": 0.3382,
+        "MEDISAVE": 0.3088
       },
       {
         "age_grp": "Above 60 - 65 years",
-        "": 0.42
+        "ORDINARY": 0.14,
+        "RETIREMENT": 0.44,
+        "MEDISAVE": 0.42
       },
       {
         "age_grp": "Above 65 - 70 years",
-        "": 0.6363
+        "ORDINARY": 0.0607,
+        "RETIREMENT": 0.303,
+        "MEDISAVE": 0.6363
       },
       {
         "age_grp": "Above 70 years",
-        "": 0.84
+        "ORDINARY": 0.08,
+        "RETIREMENT": 0.08,
+        "MEDISAVE": 0.84
       }
     ],
     "_source": "DataGov CPF d_97ec9a2ce15cbf253128e48779a3fba0",
@@ -287,11 +345,11 @@
   "gst": 0.09,
   "hdb_loan": 0.026,
   "sora_market": {
-    "date": null,
-    "sora": null,
-    "comp_sora_1m": null,
-    "comp_sora_3m": null,
-    "comp_sora_6m": null,
+    "date": "2026-10-01",
+    "sora": 0.012965,
+    "comp_sora_1m": 0.012492,
+    "comp_sora_3m": 0.012337,
+    "comp_sora_6m": 0.011625,
     "sf_deposit_rate": null,
     "sf_borrowing_rate": null
   }
