@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-10-04T19:54:49.291833+00:00",
+  "last_updated_utc": "2026-10-05T03:50:35.056966+00:00",
   "cpf_contribution": {
     "effective_from": "2026-01",
     "bands": [
@@ -173,6 +173,7 @@
     "_note": "OA allocation decreases with age. From 2025: SA closed, 55+ contributions go to RA."
   },
   "ow_ceiling": 8000.0,
+  "ow_ceiling_source": "2026-01",
   "bsd_rates": [
     {
       "_id": 54,
@@ -345,11 +346,11 @@
   "gst": 0.09,
   "hdb_loan": 0.026,
   "sora_market": {
-    "date": "2026-10-01",
-    "sora": 0.012965,
-    "comp_sora_1m": 0.012492,
-    "comp_sora_3m": 0.012337,
-    "comp_sora_6m": 0.011625,
+    "date": "2026-10-02",
+    "sora": 0.013724,
+    "comp_sora_1m": 0.012672,
+    "comp_sora_3m": 0.012332,
+    "comp_sora_6m": 0.011689,
     "sf_deposit_rate": null,
     "sf_borrowing_rate": null
   }
